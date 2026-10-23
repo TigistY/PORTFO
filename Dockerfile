@@ -45,4 +45,4 @@ RUN mkdir -p /var/www/database && \
 # Expose port 80
 EXPOSE 80
 
-CMD php artisan config:cache && php artisan route:cache && php artisan view:cache && php -S 0.0.0.0:80 -t public
+CMD php artisan config:clear && php artisan route:clear && php artisan view:clear && php -S 0.0.0.0:80 -t public
