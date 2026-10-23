@@ -30,21 +30,29 @@
 
      
         <div class="row g-3 text-start">
-            <div class="col-md-6">
-                <div class="card card-custom p-3 text-center">
-                    <i class="fa-solid fa-envelope text-primary fs-3 mb-2"></i>
-                    <h5 class="text-white">Email</h5>
-                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=yeshambeltg02@gmail.com" target="_blank" class="text-secondary text-decoration-none">yeshambeltg02@gmail.com</a>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="card card-custom p-3 text-center">
-                    <i class="fa-brands fa-github text-primary fs-3 mb-2"></i>
-                    <h5 class="text-white">GitHub</h5>
-                    <a href="https://github.com/TigistY" target="_blank" class="text-secondary text-decoration-none">github.com/TigistY</a>
-                </div>
-            </div>
+    <div class="col-md-6">
+        <div class="card card-custom p-3 text-center">
+            <i class="fa-solid fa-envelope text-primary fs-3 mb-2"></i>
+            <h5 class="text-white">Email</h5>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=yeshambeltg02@gmail.com" target="_blank" class="text-secondary text-decoration-none">yeshambeltg02@gmail.com</a>
         </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card card-custom p-3 text-center">
+            <i class="fa-brands fa-github text-primary fs-3 mb-2"></i>
+            <h5 class="text-white">GitHub</h5>
+            <a href="https://github.com/TigistY" target="_blank" class="text-secondary text-decoration-none">github.com/TigistY</a>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card card-custom p-3 text-center">
+            <!-- የ LinkedIn አዶ እዚህ ጋር ተስተካክሏል -->
+            <i class="fa-brands fa-linkedin text-primary fs-3 mb-2"></i>
+            <h5 class="text-white">LinkedIn</h5>
+            <a href="https://www.linkedin.com/in/tigist-yeshambel-0" target="_blank" rel="noopener noreferrer" class="text-secondary text-decoration-none">LinkedIn Profile</a>
+        </div>
+    </div>
+</div>
     </div>
 </div>
 @endsection
