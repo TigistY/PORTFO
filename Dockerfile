@@ -1,6 +1,6 @@
 FROM php:8.2-fpm
 
-# Install system dependencies
+# Install system dependencies & Node.js
 RUN apt-get update && apt-get install -y \
     git \
     curl \
@@ -11,7 +11,9 @@ RUN apt-get update && apt-get install -y \
     unzip \
     nginx \
     sqlite3 \
-    libsqlite3-dev
+    libsqlite3-dev \
+    && curl -fsSL https://deb.nodesource.com/setup_20.x | bash - \
+    && apt-get install -y nodejs
 
 # Clear cache
 RUN apt-get clean && rm -rf /var/lib/apt/lists/*
@@ -28,8 +30,11 @@ WORKDIR /var/www
 # Copy existing application directory contents
 COPY . /var/www
 
-# Install dependencies
+# Install PHP dependencies
 RUN composer install --no-dev --optimize-autoloader
+
+# Install Node dependencies and build assets (Tailwind/Vite)
+RUN npm install && npm run build
 
 # Create SQLite database file and set directory permissions
 RUN mkdir -p /var/www/database && \
